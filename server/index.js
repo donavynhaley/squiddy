@@ -100,4 +100,4 @@ app.delete('/participants', (req, res) => {
 });
 
 
-app.listen(3000, () => console.log('Activation server listening on port 3000'));
+app.listen(4587, () => console.log('Activation server listening on port 4587'));
