@@ -19,8 +19,8 @@ app.post('/participant', (req, res) => {
     '--env', `ROOM_CODE=${roomCode}`,
     '--env', `ENVIRONMENT=${environment}`,
     '--name', containerName,
-    '--network', 'video-bot_default',
-    'video-bot-bot'
+    '--network', 'nginx-proxy',
+    'squiddy-bot'
   ]);
 
   bot.stdout.on('data', (data) => console.log(`[BOT ${botId}]: ${data}`));

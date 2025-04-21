@@ -2,12 +2,19 @@ services:
   server:
     build: ./server
     ports:
-      - "3000:3000"
+      - "4587:4587"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - nginx-proxy
 
   bot:
     build: ./bot
     privileged: true
     environment:
       - ROOM_CODE=default-room
+
+
+networks:
+  nginx-proxy:
+    external: true
