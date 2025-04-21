@@ -98,7 +98,7 @@ curl -X DELETE http://localhost:4587/participants
 - Timeout-based auto-kill for inactive bots
 - Room-aware fake video or avatar identity
 - Live metrics & logs endpoint
-- Endpoints to trigger UI behavior (e.g., bot raises hand, sends message, toggles mic/video)
+- Endpoints to trigger UI behavior (e.g., sends message, toggles mic/video)
 
 ---
 
